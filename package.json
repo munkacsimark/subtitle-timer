@@ -1,6 +1,6 @@
 {
   "name": "subtitle-timer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create an positive or negative delayed subtitle (.srt) file from an existing.",
   "main": "./index.js",
   "bin": "./index.js",

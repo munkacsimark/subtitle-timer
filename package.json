@@ -24,12 +24,12 @@
     "prepublishOnly": "npm run test",
     "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js -- -R spec"
   },
-  "homepage": "https://github.com/munkacsimark/subtitle-timer#readme",
+  "homepage": "https://gitlab.com/munkacsimark/subtitle-timer#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/munkacsimark/subtitle-timer.git"
+    "url": "git+https://gitlab.com/munkacsimark/subtitle-timer.git"
   },
   "bugs": {
-    "url": "https://github.com/munkacsimark/subtitle-timer/issues"
+    "url": "https://gitlab.com/munkacsimark/subtitle-timer/issues"
   }
 }

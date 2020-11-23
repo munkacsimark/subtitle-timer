@@ -1,13 +1,15 @@
 {
   "name": "subtitle-timer",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Create an positive or negative delayed subtitle (.srt) file from an existing.",
   "main": "./index.js",
-  "bin": "./index.js",
+  "bin": {
+    "subtitle-timer": "index.js"
+  },
   "author": "Márk Munkácsi <munkacsimark@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "commander": "^2.15.1",
+    "commander": "^6.2.0",
     "subtitles-parser": "^0.0.2"
   },
   "engines": {
@@ -17,19 +19,19 @@
     "chai": "^4.1.2",
     "coveralls": "^3.0.1",
     "istanbul": "^0.4.5",
-    "mocha": "^5.1.1"
+    "mocha": "^8.2.1"
   },
   "scripts": {
     "test": "mocha --reporter spec",
     "prepublishOnly": "npm run test",
     "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js -- -R spec"
   },
-  "homepage": "https://gitlab.com/munkacsimark/subtitle-timer#readme",
+  "homepage": "https://github.com/munkacsimark/subtitle-timer#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/munkacsimark/subtitle-timer.git"
+    "url": "git+https://github.com/munkacsimark/subtitle-timer.git"
   },
   "bugs": {
-    "url": "https://gitlab.com/munkacsimark/subtitle-timer/issues"
+    "url": "https://github.com/munkacsimark/subtitle-timer/issues"
   }
 }

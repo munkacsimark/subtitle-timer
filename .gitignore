@@ -126,3 +126,6 @@ $RECYCLE.BIN/
 
 
 # End of https://www.gitignore.io/api/node,linux,macos,windows
+
+# IDE stuff
+.idea/

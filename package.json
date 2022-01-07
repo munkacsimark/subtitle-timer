@@ -1,6 +1,6 @@
 {
   "name": "subtitle-timer",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Create an positive or negative delayed subtitle (.srt) file from an existing.",
   "main": "./index.js",
   "bin": {
@@ -9,7 +9,7 @@
   "author": "Márk Munkácsi <munkacsimark@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "commander": "^6.2.0",
+    "commander": "^8.3.0",
     "subtitles-parser": "^0.0.2"
   },
   "engines": {

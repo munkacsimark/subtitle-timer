@@ -1,17 +1,8 @@
-[![Build Status](https://travis-ci.org/munkacsimark/subtitle-timer.svg?branch=master)](https://travis-ci.org/munkacsimark/subtitle-timer) [![Coverage Status](https://coveralls.io/repos/github/munkacsimark/subtitle-timer/badge.svg?branch=master)](https://coveralls.io/github/munkacsimark/subtitle-timer?branch=master)
-
 ## Subtitle timer
 
-With this tool you can retime your subtitles. It works only with `.srt` files. It creates a delayed subtitle file next to original.
+With this tool you can fix your delayed subtitles. It works only with `.srt` files. It will create a delayed subtitle file next to the original one.
 
 ### Usage
-
-```bash
-$ npm i -g subtitle-timer
-$ subtitle-timer [options] <file>
-```
-
-or you can use it without install with `npx`:
 
 ```bash
 $ npx subtitle-timer [options] <file>
@@ -19,15 +10,17 @@ $ npx subtitle-timer [options] <file>
 
 #### Options
 
-- **-s** => delay time in seconds (it can be negative) (required)
-- **-e** => encoing of file [ascii|latin1|utf8] (optional, default is utf8)
+| Argument | Description                             | Possible values     | Default | Required |
+| -------- | --------------------------------------- | ------------------- | ------- | -------- |
+| -s       | delay time in seconds (can be negative) | -                   | -       | yes      |
+| -e       | encoing of the file                     | ascii, latin1, utf8 | utf8    | no       |
 
-#### E.g.
+#### Example
 
-We have `beautiful-subtitle.srt`. But it contains special characters and it's encoded in `iso-8859-1`. Also we need delay it because it's delayed for 2 minutes.
+Let's say we have `subtitle.srt`. But the file contains special characters and it's encoded in `iso-8859-1`. Also we need to delay it because it's delayed with 2 minutes.
 
 ```bash
-$ subtitle-timer -s 120 -e latin1 ./beautiful-subtitle.srt
+$ subtitle-timer -s 120 -e latin1 ./subtitle.srt
 ```
 
-The result is `beautiful-subtitle-DELAYED.srt`.
+The result is `subtitle-DELAYED.srt`.

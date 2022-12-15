@@ -13,7 +13,7 @@ $ npx subtitle-timer [options] <file>
 | Argument | Description                             | Possible values     | Default | Required |
 | -------- | --------------------------------------- | ------------------- | ------- | -------- |
 | -s       | delay time in seconds (can be negative) | -                   | -       | yes      |
-| -e       | encoing of the file                     | ascii, latin1, utf8 | utf8    | no       |
+| -e       | encoding of the file                    | ascii, latin1, utf8 | utf8    | no       |
 
 #### Example
 
